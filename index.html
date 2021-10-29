@@ -96,18 +96,7 @@
 	var person6 = new PIXI.Sprite.fromImage("res/小知02.png");
 	    person6.visible = false;
 	app.add.ticker(animate);
-	function animate(){
-		if(m == 30){
-        	personFive.visible = false;
-			person6.visible = true;
-		}
-		if(m == 60){
-			person6.visible = false;
-			personFive.visible = true;
-			m = 0;
-		}
-		m++;
-        }
+	
         app.stage.addChild(person6)
         app.stage.addChild(personFive);
         personFive.x = 67;
@@ -197,6 +186,18 @@
         		know2.visible = true;
         		b = 1;
         	}
+        }
+	    function animate(){
+		if(m == 30){
+        	personFive.visible = false;
+			person6.visible = true;
+		}
+		if(m == 60){
+			person6.visible = false;
+			personFive.visible = true;
+			m = 0;
+		}
+		m++;
         }
         
         
