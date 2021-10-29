@@ -90,15 +90,15 @@
         personFour.on("click",xiaozhi2);
         
         //添加小人5 舞龙龙头
-	var m = 0
+// 	var m = 0
         var personFive = new PIXI.Sprite.fromImage("res/小知01.png");
-	    personFive.visible = true;
-	var person6 = new PIXI.Sprite.fromImage("res/小知02.png");
-	    person6.visible = false;
-	app.add.ticker(animate);
+// 	    personFive.visible = true;
+// 	var person6 = new PIXI.Sprite.fromImage("res/小知02.png");
+// 	    person6.visible = false;
+// 	app.add.ticker(animate);
 	
         app.stage.addChild(person6)
-        app.stage.addChild(personFive);
+//         app.stage.addChild(personFive);
         personFive.x = 67;
         personFive.y = 610;
         personFive.scale.x = 0.3;
@@ -106,13 +106,13 @@
         personFive.interactive = true;
         personFive.on("touchstart",xiaozhi1);
         personFive.on("click",xiaozhi1);
-	    personFive.x = 67;
-        person6.y = 610;
-        person6.scale.x = 0.3;
-        person6.scale.y = 0.3;
-        person6.interactive = true;
-        person6.on("touchstart",xiaozhi1);
-        person6.on("click",xiaozhi1);
+// 	    personFive.x = 67;
+//         person6.y = 610;
+//         person6.scale.x = 0.3;
+//         person6.scale.y = 0.3;
+//         person6.interactive = true;
+//         person6.on("touchstart",xiaozhi1);
+//         person6.on("click",xiaozhi1);
 	    
 
         
@@ -187,18 +187,18 @@
         		b = 1;
         	}
         }
-	    function animate(){
-		if(m == 30){
-        	personFive.visible = false;
-			person6.visible = true;
-		}
-		if(m == 60){
-			person6.visible = false;
-			personFive.visible = true;
-			m = 0;
-		}
-		m++;
-        }
+// 	    function animate(){
+// 		if(m == 30){
+//         	personFive.visible = false;
+// 			person6.visible = true;
+// 		}
+// 		if(m == 60){
+// 			person6.visible = false;
+// 			personFive.visible = true;
+// 			m = 0;
+// 		}
+// 		m++;
+//         }
         
         
 //       //添加小人2点击判断
